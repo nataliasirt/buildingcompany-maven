@@ -10,28 +10,17 @@ public class Client extends Person {
 
     List<Client> allClients = new ArrayList<>();
 
-    private String surname;
     private String companyName;
-    private int telephoneNumber;
+    private int phoneNumber;
 
     public Client() {
     }
 
-    public Client(String personName, int personAge, int id, String personSurname, String companyName, int telephoneNumber) throws AgeException {
+    public Client(String personName, int personAge, int id, String personSurname, String companyName, int phoneNumber) throws AgeException {
         super(personName, personAge);
-        this.surname = personSurname;
         this.companyName = companyName;
-        this.telephoneNumber = telephoneNumber;
+        this.phoneNumber = phoneNumber;
     }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
-
     public String getCompanyName() {
         return companyName;
     }
@@ -41,18 +30,17 @@ public class Client extends Person {
     }
 
     public int getTelephoneNumber() {
-        return telephoneNumber;
+        return phoneNumber;
     }
 
-    public void setTelephoneNumber(int telephoneNumber) {
-        this.telephoneNumber = telephoneNumber;
+    public void setTelephoneNumber(int phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     @Override
     public String toString() {
-        return "personSurname " + surname + "\n" +
-                "companyName " + companyName + "\n" +
-                "telephoneNumber " + telephoneNumber + "\n"
+        return "companyName " + companyName + "\n" +
+                "telephoneNumber " + phoneNumber + "\n"
                 + "name " + getPersonName() + "\n" + "age " + getPersonAge() + "\n";
     }
 
@@ -62,17 +50,17 @@ public class Client extends Person {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Client client = (Client) o;
-        return telephoneNumber == client.telephoneNumber && Objects.equals(surname, client.surname) && Objects.equals(companyName, client.companyName);
+        return phoneNumber == client.phoneNumber && Objects.equals(companyName, client.companyName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), surname, companyName, telephoneNumber);
+        return Objects.hash(super.hashCode(),  companyName, phoneNumber);
     }
 
     @Override
     public void printPersonalInfo(String s) {
-        System.out.println("Were is my project?");
+        System.out.println("This is my project");
     }
 
     @Override
