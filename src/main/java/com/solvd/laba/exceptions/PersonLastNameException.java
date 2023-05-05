@@ -1,4 +1,4 @@
-package com.sold.laba.exceptions;
+package com.solvd.laba.exceptions;
 
 public class PersonLastNameException extends PersonInformationException{
     public PersonLastNameException() {super("unsuitable last name");}

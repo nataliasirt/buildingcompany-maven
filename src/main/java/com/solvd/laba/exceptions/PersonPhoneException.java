@@ -1,4 +1,4 @@
-package com.sold.laba.exceptions;
+package com.solvd.laba.exceptions;
 
 public class PersonPhoneException extends PersonInformationException{
     public PersonPhoneException() {super("unsuitable phone");}

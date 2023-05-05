@@ -1,4 +1,4 @@
-package com.sold.laba;
+package com.solvd.laba;
 
 /**
  * Hello world!
