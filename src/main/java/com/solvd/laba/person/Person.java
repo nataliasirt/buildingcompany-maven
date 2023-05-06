@@ -2,7 +2,6 @@ package com.solvd.laba.person;
 import com.solvd.laba.exceptions.AgeException;
 import com.solvd.laba.exceptions.PrintNullException;
 import com.solvd.laba.interfaces.IPrint;
-
 import java.util.Objects;
 
 

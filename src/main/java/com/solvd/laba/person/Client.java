@@ -1,7 +1,6 @@
 package com.solvd.laba.person;
 import com.solvd.laba.exceptions.AgeException;
 import com.solvd.laba.exceptions.PrintNullException;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -9,7 +8,6 @@ import java.util.Objects;
 public class Client extends Person {
 
     List<Client> allClients = new ArrayList<>();
-
     private String companyName;
     private int phoneNumber;
 
