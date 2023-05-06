@@ -7,7 +7,7 @@ import java.util.Objects;
 public class Employee extends Person implements IPrint {
 
     protected int salary;
-    public static int employeesCount;
+    public static int numberOfEmployees;
 
     public Employee() {
     }
@@ -29,12 +29,12 @@ public class Employee extends Person implements IPrint {
         this.salary = salary;
     }
 
-    public static int getEmployeesCount() {
-        return employeesCount;
+    public static int getNumberOfEmployees() {
+        return numberOfEmployees;
     }
 
-    public static void setEmployeesCount(int employeesCount) {
-        Employee.employeesCount = employeesCount;
+    public static void setNumberOfEmployees(int employeesCount) {
+        Employee.numberOfEmployees = numberOfEmployees;
     }
 
     @Override

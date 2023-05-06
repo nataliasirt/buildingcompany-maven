@@ -8,7 +8,7 @@ import java.util.Objects;
 public class Client extends Person {
 
     List<Client> allClients = new ArrayList<>();
-    private String companyName;
+    private String clientName;
     private int phoneNumber;
 
     public Client() {
@@ -16,15 +16,15 @@ public class Client extends Person {
 
     public Client(String personName, int personAge, int id, String personSurname, String companyName, int phoneNumber) throws AgeException {
         super(personName, personAge);
-        this.companyName = companyName;
+        this.clientName = clientName;
         this.phoneNumber = phoneNumber;
     }
     public String getCompanyName() {
-        return companyName;
+        return clientName;
     }
 
-    public void setCompanyName(String companyName) {
-        this.companyName = companyName;
+    public void setClientName(String clientName) {
+        this.clientName = clientName;
     }
 
     public int getTelephoneNumber() {
@@ -37,7 +37,7 @@ public class Client extends Person {
 
     @Override
     public String toString() {
-        return "companyName " + companyName + "\n" +
+        return "companyName " + clientName + "\n" +
                 "telephoneNumber " + phoneNumber + "\n"
                 + "name " + getPersonName() + "\n" + "age " + getPersonAge() + "\n";
     }
@@ -48,12 +48,12 @@ public class Client extends Person {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         Client client = (Client) o;
-        return phoneNumber == client.phoneNumber && Objects.equals(companyName, client.companyName);
+        return phoneNumber == client.phoneNumber && Objects.equals(clientName, client.clientName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(),  companyName, phoneNumber);
+        return Objects.hash(super.hashCode(),  clientName, phoneNumber);
     }
 
     @Override
