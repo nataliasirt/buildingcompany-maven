@@ -79,7 +79,7 @@ public class BuildingCompany {
             String contractorCompanyName = scanner.nextLine();
             contractorCompany.setNameOfContractor(contractorCompanyName);
 
-            String messageTwo = "Enter count of number of employees: ";
+            String messageTwo = "Enter number of employees needed for the project : ";
             LOGGER.info(messageTwo);
             int numberOfEmployees = scanner.nextInt();
             contractorCompany.setNumberOfEmployees(numberOfEmployees);
