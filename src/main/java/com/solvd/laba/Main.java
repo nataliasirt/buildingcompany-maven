@@ -1,4 +1,5 @@
-package com.solvd.laba.database;
+package com.solvd.laba;
+import com.solvd.laba.database.ContractorCompany;
 import com.solvd.laba.exceptions.AgeException;
 import com.solvd.laba.exceptions.PrintNullException;
 import com.solvd.laba.person.Client;
@@ -7,7 +8,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import java.util.Scanner;
 
-public class BuildingCompany {
+public class Main {
     private String nameOfCompany;
     private int numberOfEmployees;
 
@@ -27,11 +28,11 @@ public class BuildingCompany {
         this.numberOfEmployees = numberOfEmployees;
     }
 
-    public BuildingCompany(String nameOfCompany, int numberOfEmployees) {
+    public Main(String nameOfCompany, int numberOfEmployees) {
 
     }
 
-    private static final Logger LOGGER = LogManager.getLogger(BuildingCompany.class);
+    private static final Logger LOGGER = LogManager.getLogger();
 
     public static void main(String[] args) {
 

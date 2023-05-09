@@ -11,9 +11,9 @@ public enum TypeBuilding {
             return "MEDIUM";
         }
     },
-    HUGE {
+    BIG {
         public String getValue() {
-            return "HUGE";
+            return "BIG";
         }
     };
 
