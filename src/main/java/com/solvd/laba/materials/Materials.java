@@ -31,6 +31,7 @@ public abstract class Materials {
         {
             materialsAndSuppliers.put("Stone", 300);
             materialsAndSuppliers.put("Wood", 400);
+            materialsAndSuppliers.put("Concrete", 500);
             LOGGER.info("Map materialsAndSuppliers" + materialsAndSuppliers);
         }};
 
