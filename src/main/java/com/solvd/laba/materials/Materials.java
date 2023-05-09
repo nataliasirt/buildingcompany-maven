@@ -29,8 +29,8 @@ public abstract class Materials {
 
     Map<String, Integer> materialsAndSuppliers = new HashMap<>(){
         {
-            materialsAndSuppliers.put("Stone", 374);
-            materialsAndSuppliers.put("Wood", 463);
+            materialsAndSuppliers.put("Stone", 300);
+            materialsAndSuppliers.put("Wood", 400);
             LOGGER.info("Map materialsAndSuppliers" + materialsAndSuppliers);
         }};
 
