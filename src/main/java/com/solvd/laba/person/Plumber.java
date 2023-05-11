@@ -3,15 +3,9 @@ import com.solvd.laba.exceptions.AgeException;
 
 public class Plumber extends Employee {
 
-    public Plumber() {
-    }
-    public Plumber(String personName, int personAge, int salary) throws AgeException {
-        super(personName, personAge, salary);
-        if (personAge < 0 || personAge > 65) {
-            throw new AgeException("Age is not correct! ");
+    public Plumber(String personName, double baseSalary, int subordinatesNumber)  {
+        super(personName, baseSalary, subordinatesNumber);
         }
-    }
-
     private boolean highEducation;
 
     public boolean isHighEducation() {

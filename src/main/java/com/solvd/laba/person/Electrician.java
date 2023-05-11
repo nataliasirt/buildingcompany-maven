@@ -7,11 +7,8 @@ public class Electrician extends Employee {
     private boolean insurance;
     private int worksYearExperience;
 
-    public Electrician() {
-    }
-
-    public Electrician(String personName, int personAge, int salary, boolean insurance, int worksYearExperience) throws AgeException {
-        super(personName, personAge, salary);
+    public Electrician(String personName, int personAge, double baseSalary, int subordinatesNumber, boolean insurance, int worksYearExperience) throws AgeException {
+        super(personName, baseSalary, subordinatesNumber);
         this.insurance = insurance;
         this.worksYearExperience = worksYearExperience;
     }
@@ -38,8 +35,8 @@ public class Electrician extends Employee {
         return "Electrician{" +
                 "insurance=" + insurance +
                 ", worksYearExperience=" + worksYearExperience +
-                ", salary=" + salary +
-                ", personName='" + personName + '\'' +
+                ", salary=" + getBaseSalary() +
+                ", personName='" + getPersonName() + '\'' +
                 ", personAge=" + personAge +
                 "} " + super.toString();
     }

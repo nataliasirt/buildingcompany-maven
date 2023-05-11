@@ -1,21 +1,17 @@
 package com.solvd.laba.enums;
 
 public enum TypeBuilding {
-    SMALL {
+    CLASSIC {
         public String getValue() {
-            return "SMALL";
+            return "CLASSIC";
         }
     },
-    MEDIUM {
+    MODERN {
         public String getValue() {
-            return "MEDIUM";
-        }
-    },
-    BIG {
-        public String getValue() {
-            return "BIG";
+            return "MODERN";
         }
     };
+
 
     public abstract String getValue();
 

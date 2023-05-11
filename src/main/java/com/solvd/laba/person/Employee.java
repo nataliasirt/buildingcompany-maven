@@ -1,65 +1,40 @@
 package com.solvd.laba.person;
 import com.solvd.laba.exceptions.AgeException;
 import com.solvd.laba.exceptions.PrintNullException;
-import com.solvd.laba.interfaces.IPrint;
-import java.util.Objects;
 
-public class Employee extends Person implements IPrint {
+public class Employee extends Person {
+    private String personName;
+    private double baseSalary = 1000;
+    private int subordinatesNumber;
 
-    protected int salary;
-    public static int numberOfEmployees;
-
-    public Employee() {
-    }
-
-    public Employee(String personName, int personAge, int salary) throws AgeException {
+    public Employee(String personName, int personAge, double baseSalary, int subordinatesNumber) throws AgeException {
         super(personName, personAge);
-        this.salary = salary;
+        this.personName = personName;
+        this.baseSalary = baseSalary;
+        this.subordinatesNumber = subordinatesNumber;
     }
 
-    public Employee(String personName, int personAge) throws AgeException {
-        super(personName, personAge);
+    public Employee(String personName, double baseSalary, int subordinatesNumber) {
     }
 
-    public int getSalary() {
-        return salary;
+    public String getName() {
+            return personName;}
+    public double getBaseSalary() {
+            return baseSalary;}
+    public int getSubordinatesNumber() {
+            return subordinatesNumber;}
+    public void setBaseSalary(double baseSalary) {
+        this.baseSalary = baseSalary;
     }
 
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
-
-    public static int getNumberOfEmployees() {
-        return numberOfEmployees;
-    }
-
-    public static void setNumberOfEmployees(int employeesCount) {
-        Employee.numberOfEmployees = numberOfEmployees;
-    }
-
-    @Override
-    public String toString() {
-        return "Name: " + getPersonName() + "\n" + "Age: " + getPersonAge() + "\n" + "\n" +
-                "\n" +
-                "salary: " + getSalary();
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        if (!super.equals(o)) return false;
-        Employee employee = (Employee) o;
-        return personAge == employee.personAge && salary == employee.salary && Objects.equals(personName, employee.personName);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(super.hashCode(), personName, personAge, salary);
-    }
+    public void setSubordinatesNumber(int subordinatesNumber) {
+            this.subordinatesNumber = subordinatesNumber;
+        }
 
     @Override
     public void printPersonalInfo() throws PrintNullException {
 
     }
+
+
 }

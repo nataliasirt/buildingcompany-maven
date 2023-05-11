@@ -1,5 +1,4 @@
 package com.solvd.laba.materials;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
