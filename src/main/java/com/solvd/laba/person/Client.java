@@ -19,6 +19,7 @@ public class Client extends Person {
         this.clientName = clientName;
         this.phoneNumber = phoneNumber;
     }
+
     public String getCompanyName() {
         return clientName;
     }
@@ -53,7 +54,7 @@ public class Client extends Person {
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(),  clientName, phoneNumber);
+        return Objects.hash(super.hashCode(), clientName, phoneNumber);
     }
 
     @Override
@@ -64,9 +65,5 @@ public class Client extends Person {
     @Override
     public void printPersonalInfo() throws PrintNullException {
     }
-
-    public List<Client> addClient(Client client) {
-        allClients.add(client);
-        return allClients;
-    }
 }
+
