@@ -25,7 +25,7 @@ public class MyLambdas {
         LOGGER.info(String.valueOf(function.apply(750, 500)));
 
         IHash<Object> objectIHash = Object::hashCode;
-        LOGGER.info(String.valueOf(objectIHash.getHash("concretePlate")));
+        LOGGER.info(String.valueOf(objectIHash.getHash("Wood")));
 
         IDoubleFunction<Double> function1 = Double::doubleValue;
         LOGGER.info(String.valueOf(function1.get(1.2)));

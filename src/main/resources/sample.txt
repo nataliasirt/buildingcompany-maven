@@ -3,3 +3,4 @@ There are 9 unique words.
 There are 10 unique words.
 There are 11 unique words.
 There are 8 unique words.
+There are 9 unique words.

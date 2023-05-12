@@ -11,21 +11,17 @@ public class FileReaderSample {
 
     public static void main(String[] args) throws IOException {
 
-        //Opens file
         File file = new FileUtils().getFile("src\\main\\resources\\sample.txt");
 
-        //Reads file
         String str = FileUtils.readFileToString(file, StandardCharsets.UTF_8);
 
-        //Converts line to lowercase and removes all punctuation
         str = StringUtils.lowerCase(str).replaceAll("\\p{P}", "");
         String[] words = StringUtils.split(str);
 
-        //Stores unique words from file
         HashSet<String> unique= new HashSet<>(Arrays.asList(words));
 
-        //Writes Number of unique words to file
         FileUtils.writeStringToFile(file, "\nThere are " + unique.size() + " unique words.", true);
+
     }
 }
 
