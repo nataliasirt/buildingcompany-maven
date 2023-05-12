@@ -1,6 +1,5 @@
 package com.solvd.laba;
 import com.solvd.laba.database.ContractorCompany;
-import com.solvd.laba.exceptions.AgeException;
 import com.solvd.laba.exceptions.PrintNullException;
 import com.solvd.laba.person.Client;
 import com.solvd.laba.person.Employee;
@@ -39,7 +38,7 @@ public class Main {
         try {
             Employee employee1 = new Employee("Ivan Sidorov", 28, 1500);
             employee1.printPersonalInfo(null);
-        } catch (PrintNullException | AgeException e) {
+        } catch (PrintNullException e) {
             LOGGER.error(e.getMessage());
         }
     }
